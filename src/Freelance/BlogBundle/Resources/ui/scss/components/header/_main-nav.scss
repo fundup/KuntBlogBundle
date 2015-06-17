@@ -5,8 +5,13 @@
 /* Default
    ========================================================================== */
 
+/* Hover dropdown */
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
 #mainNav {
-  background-color: $elo-dark;
+  background-color: $elo-light;
 }
 
 /* img brand ***/
@@ -17,11 +22,15 @@
   width: 10%;
   height: auto;
   display: inline;
-  background-color: #fff;
+  background-color: $elo-light;
   img {
     width: 100%;
   }
 }
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  background-color: $elo-light;
+}
+
 
 /**** navigation Link   ***/
 .navbar-nav {
@@ -30,12 +39,12 @@
     width: 25%;
     text-align: center;
     a {
-      color: $elo-light;
+      color: $elo-dark;
       text-decoration: none;
       text-transform: uppercase;
       font-family: $font-family--base;
       &:hover {
-        color: $elo-light;
+        color: $elo-dark;
       }
     }
   }
