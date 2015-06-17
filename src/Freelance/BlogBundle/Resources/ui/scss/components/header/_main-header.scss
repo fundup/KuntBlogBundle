@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Header - Main header
+   ========================================================================== */
+
+header {
+  img {
+    width: 100%;
+  }
+
+  .rotate-h1 {
+    color: $elo_primary-col;
+  }
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+//  @include background-cover;
+  text-align: center;
+  color: white;
+  .header-content {
+    position: relative;
+    text-align: center;
+    padding: 100px 15px 100px;
+    width: 100%;
+    .header-content-inner {
+      h1 {
+        color: $elo-font-dark;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      hr {
+        margin: 30px auto;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    min-height: 100%;
+    .header-content {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 50px;
+      .header-content-inner {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}

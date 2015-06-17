@@ -1,0 +1,6 @@
+name: "Article page"
+rows:
+    - regions:
+        - { name: "image", span: 12 }
+        - { name: "main", span: 12 }
+template: "FreelanceBlogBundle::Pages\\ArticlePage\\pagetemplate.html.twig"

@@ -1,0 +1,27 @@
+freelanceblogbundle_default:
+    resource: "@FreelanceBlogBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /
+
+
+
+freelanceblogbundle_articlepage_admin_list:
+    resource: @FreelanceBlogBundle/Controller/ArticlePageAdminListController.php
+    type:     annotation
+    prefix:   /admin/articlepage/
+
+freelanceblogbundle_articleauthor_admin_list:
+    resource: @FreelanceBlogBundle/Controller/ArticleAuthorAdminListController.php
+    type:     annotation
+    prefix:   /admin/articleauthor/
+
+
+freelanceblogbundle_articlecategory_admin_list:
+    resource: @FreelanceBlogBundle/Controller/ArticleCategoryAdminListController.php
+    type:     annotation
+    prefix:   /admin/articlecategory/
+
+freelanceblogbundle_articlecategory:
+    resource: @FreelanceBlogBundle/Controller/ArticleCategoryController.php
+    type:     annotation
+    prefix:   /

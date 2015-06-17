@@ -1,0 +1,18 @@
+<article class="blog-item col-md-9">
+    <div class="blog-item__head">
+        <time class="blog-item__head__meta">
+            {{ page.date | date("d/m/Y")}}
+            {% if author is not empty %}
+                | <a href="https://plus.google.com/u/0/114186096795183702361" rel="publisher">
+                    <strong>{{ author.name }}</strong>
+                  </a>
+            {% endif %}
+        </time>
+        <h1 class="blog-item__head__title">
+            {{ page.title }}
+        </h1>
+        {{ render_pageparts(page, 'image') }}
+    </div>
+    {{ render_pageparts(page, 'main') }}
+</article>
+

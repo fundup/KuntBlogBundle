@@ -1,0 +1,27 @@
+<div class="col-md-12" id="socials-share">
+
+    <h3>Partagez :</h3>
+
+    {#https://jonsuh.com/blog/social-share-links/#}
+    <a
+            class="js-social-share"
+            title="share Facebook"
+            href="https://www.facebook.com/sharer/sharer.php?u={{ app.request.uri | url_encode }}"
+            target="_blank">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+    </a>
+    <a
+            class="js-social-share"
+            title="Share on Google+"
+            href="https://plus.google.com/share?url={{ app.request.uri | url_encode }}"
+            target="_blank">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-google-plus fa-stack-1x"></i>
+        </span>
+    </a>
+    <hr/>
+</div>

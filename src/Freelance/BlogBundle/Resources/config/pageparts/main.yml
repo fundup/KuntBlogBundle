@@ -1,0 +1,16 @@
+name: Main
+context: main
+types:
+    - { name: Audio, class: Freelance\BlogBundle\Entity\PageParts\AudioPagePart }
+    - { name: Button, class: Freelance\BlogBundle\Entity\PageParts\ButtonPagePart }
+    - { name: Download, class: Freelance\BlogBundle\Entity\PageParts\DownloadPagePart }
+    - { name: Header, class: Freelance\BlogBundle\Entity\PageParts\HeaderPagePart }
+    - { name: Image, class: Freelance\BlogBundle\Entity\PageParts\ImagePagePart }
+    - { name: IntroText, class: Freelance\BlogBundle\Entity\PageParts\IntroTextPagePart }
+    - { name: Line, class: Freelance\BlogBundle\Entity\PageParts\LinePagePart }
+    - { name: Link, class: Freelance\BlogBundle\Entity\PageParts\LinkPagePart }
+    - { name: RawHtml, class: Freelance\BlogBundle\Entity\PageParts\RawHtmlPagePart }
+    - { name: Text, class: Freelance\BlogBundle\Entity\PageParts\TextPagePart }
+    - { name: Toc, class: Freelance\BlogBundle\Entity\PageParts\TocPagePart }
+    - { name: ToTop, class: Freelance\BlogBundle\Entity\PageParts\ToTopPagePart }
+    - { name: Video, class: Freelance\BlogBundle\Entity\PageParts\VideoPagePart }

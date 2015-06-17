@@ -1,0 +1,4 @@
+name: Image
+context: image
+types:
+    - { name: Image, class: Freelance\BlogBundle\Entity\PageParts\ImagePagePart }

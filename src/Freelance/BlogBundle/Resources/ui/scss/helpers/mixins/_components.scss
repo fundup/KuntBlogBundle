@@ -1,0 +1,16 @@
+@mixin border-width($width, $offset-top, $color) {
+  &::after{
+    content: " ";
+    display: block;
+    border-bottom: 3px solid $color;
+    width: $width;
+    padding-top: $offset-top;
+  }
+}
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% set htmlLocale = app.request.locale|default(defaultlocale)|slice(0,2) %}
+<!--[if lte IE 9]> <html class="no-js lt-ie9" lang="{{ htmlLocale }}"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="{{ htmlLocale }}"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <title>
+        {% block title %}
+            {% if page is defined and nodemenu.getActiveForDepth(2) is not null %}
+                {{ get_title_for(page) }} -
+            {% endif %}
+        {% endblock %}
+        {{ websitetitle | trans }}
+    </title>
+
+    {% if page is defined %}
+        {{ render_seo_metadata_for(page) }}
+    {% endif %}
+
+    {# Favicons #}
+    {% include 'FreelanceBlogBundle:Layout:_favicons.html.twig' %}
+
+    {# Webfonts #}
+    <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    {# CSS #}
+    {% include 'FreelanceBlogBundle:Layout:_css.html.twig' %}
+
+    {# JS #}
+    {% include 'FreelanceBlogBundle:Layout:_js_header.html.twig' %}
+</head>
+
+<body id="sidebar-toggle-container" class="sidebar-toggle-container{% block extra_body_classes %}{% endblock %}" {% block extra_body_attributes %}{% endblock %}>
+    {# Google Tagmanager #}
+    {% include 'FreelanceBlogBundle:Layout:_googletagmanager.html.twig' %}
+
+    {# Outdated browser message #}
+    {% include 'FreelanceBlogBundle:Layout:_outdatedbrowser.html.twig' %}
+
+    <div id="wrapper">
+        {#Nav#}
+        {% include 'FreelanceBlogBundle:Layout:_nav.html.twig' %}
+
+        {# Header #}
+        {% block header %}
+            {% include 'FreelanceBlogBundle:Layout:_header.html.twig' %}
+        {% endblock %}
+
+        {# Breadcrumbs #}
+        {% block breadcrumbs %}
+            {#{% include 'FreelanceBlogBundle:Layout:_breadcrumbs.html.twig' %}#}
+        {% endblock %}
+
+        {# Content #}
+        <main role="main">
+            {% block content %}{% endblock %}
+        </main>
+
+        {# Footer #}
+        {% block footer %}
+            {% include 'FreelanceBlogBundle:Layout:_footer.html.twig' %}
+        {% endblock %}
+
+
+        {# Cookieconsent #}
+        {% block cookieconsent %}
+            {% include 'FreelanceBlogBundle:Layout:_cookieconsent.html.twig' %}
+        {% endblock %}
+
+        {# JS Footer #}
+        {% include 'FreelanceBlogBundle:Layout:_js_footer.html.twig' %}
+    </div>
+</body>
+</html>

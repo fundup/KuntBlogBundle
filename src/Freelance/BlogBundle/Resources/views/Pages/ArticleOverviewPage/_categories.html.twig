@@ -1,0 +1,13 @@
+<div class="col-md-3" id="categories">
+    <h3>Catégories</h3>
+    <ul>
+        {% for categorie in categories%}
+            <li>
+                {% set url = '/categorie/' ~ categorie.slug %}
+                <a href="{{ url }}">
+                    {{ categorie.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

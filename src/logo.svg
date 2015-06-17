@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Nouveau document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="-243.94537"
+     inkscape:cy="664.43699"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="1920"
+     inkscape:window-y="312"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot2985"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#b4b5d8;fill-opacity:1;stroke:none;font-family:Sans"
+       inkscape:export-filename="/var/www/elodieBlog/src/Freelance/BlogBundle/Resources/ui/img/general/logo-blog-culinaire.png"
+       inkscape:export-xdpi="163.49821"
+       inkscape:export-ydpi="163.49821"><flowRegion
+         id="flowRegion2987"><rect
+           id="rect2989"
+           width="940"
+           height="428.57144"
+           x="-291.42856"
+           y="295.21933"
+           style="fill:#b4b5d8;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara2991"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Purisa;-inkscape-font-specification:Purisa;fill:#b4b5d8;fill-opacity:1">Insomnies</flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Purisa;-inkscape-font-specification:Purisa;fill:#b4b5d8;fill-opacity:1"
+         id="flowPara2995"><flowSpan
+           style="font-size:9px;fill:#b4b5d8;fill-opacity:1"
+           id="flowSpan2997">     </flowSpan></flowPara><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Purisa;-inkscape-font-specification:Purisa;fill:#b4b5d8;fill-opacity:1"
+         id="flowPara2993">    Culinaires</flowPara></flowRoot>    <path
+       sodipodi:type="star"
+       style="fill:#b4b5d8;fill-opacity:1;stroke:none"
+       id="path3767"
+       sodipodi:sides="5"
+       sodipodi:cx="-415.71429"
+       sodipodi:cy="393.07648"
+       sodipodi:r1="18.694647"
+       sodipodi:r2="9.3473234"
+       sodipodi:arg1="0.11487661"
+       sodipodi:arg2="0.74319514"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m -397.14287,395.21933 -11.68889,4.18196 -3.18163,11.99985 -7.58934,-9.82451 -12.39571,0.68225 6.99843,-10.25383 -4.47935,-11.57819 11.91461,3.48729 9.62732,-7.83797 0.36521,12.40909 z"
+       inkscape:transform-center-x="-0.95615253"
+       inkscape:transform-center-y="0.55506405"
+       transform="matrix(0.83605818,0,0,0.83823659,299.89168,-27.736063)"
+       inkscape:export-filename="/var/www/elodieBlog/src/Freelance/BlogBundle/Resources/ui/img/general/logo-blog-culinaire.png"
+       inkscape:export-xdpi="163.49821"
+       inkscape:export-ydpi="163.49821" />
+    <g
+       id="miu"
+       style="fill:#b4b5d8;stroke:none;fill-opacity:1"
+       transform="matrix(3.2527473,0,0,2.948052,-254.35715,337.79075)">
+      <path
+         id="food_fork_knife_restaurant_eating_glyph"
+         d="m -3.4962524,12.952302 0.2088838,-1.443091 -3.0679358,-3.5308404 1.2124675,0.2730824 2.6251539,3.021249 -0.2966337,2.464429 c 0,0 1.395226,1.325162 2.54543593,2.64892 1.1502098,1.323759 2.70487177,3.393578 2.70487177,3.393578 l -0.556179,0.48223 c 0,0 -1.82409957,-1.818746 -2.9829615,-3.152462 -1.158862,-1.333717 -2.2673463,-2.890036 -2.2673463,-2.890036 l -2.4842619,-0.05328 -2.6251541,-3.021249 -0.098793,-1.238684 3.0679361,3.53084 1.4580898,-0.0027 -3.6930739,-4.250302 0.5561792,-0.48223 3.6933208,4.250586 z M 1.8243814,9.449725 c 0,0 0.1518168,-0.861382 -1.55207207,-2.8223619 C -0.39277267,5.8619306 -2.15527,4.3367674 -3.9997223,5.9359837 l 4.46390053,5.1374343 c 0,0 1.15955017,1.598585 2.23489677,2.836185 1.0753469,1.237599 2.926767,3.104294 2.926767,3.104294 l 0.523463,-0.453864 c 0,0 -1.541807,-2.038519 -2.6650358,-3.331226 C 2.3610403,11.9361 0.98764123,10.619554 0.98764123,10.619554 c 0,0 0.77885337,-0.512959 0.83674017,-1.169829 z"
+         inkscape:connector-curvature="0"
+         style="fill:#b4b5d8;fill-opacity:1"
+         inkscape:export-filename="/var/www/elodieBlog/src/Freelance/BlogBundle/Resources/ui/img/general/logo-blog-culinaire.png"
+         inkscape:export-xdpi="163.49821"
+         inkscape:export-ydpi="163.49821" />
+    </g>
+  </g>
+</svg>

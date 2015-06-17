@@ -1,0 +1,3 @@
+name: "Article overview page"
+rows: []
+template: "FreelanceBlogBundle::Pages\\ArticleOverviewPage\\pagetemplate.html.twig"

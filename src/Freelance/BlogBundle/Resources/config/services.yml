@@ -1,0 +1,12 @@
+services:
+    freelanceblogbundle.default_locale_listener:
+        class: Freelance\BlogBundle\EventListener\DefaultLocaleListener
+        tags:
+          - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+        arguments: [%defaultlocale%]
+
+    freelanceblogbundle.article.menu.adaptor:
+        class: Freelance\BlogBundle\Helper\Menu\ArticleMenuAdaptor
+        arguments: ["@doctrine.orm.entity_manager"]
+        tags:
+            - { name: kunstmaan_admin.menu.adaptor }

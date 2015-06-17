@@ -1,0 +1,61 @@
+/* ==========================================================================
+   Header - Main navigation
+   ========================================================================== */
+
+/* Default
+   ========================================================================== */
+
+#mainNav {
+  background-color: $elo-dark;
+}
+
+/* img brand ***/
+.navbar-brand {
+  position: absolute;
+  top: 0px;
+  left: 40%;
+  width: 10%;
+  height: auto;
+  display: inline;
+  background-color: #fff;
+  img {
+    width: 100%;
+  }
+}
+
+/**** navigation Link   ***/
+.navbar-nav {
+  width: 40%;
+  li {
+    width: 25%;
+    text-align: center;
+    a {
+      color: $elo-light;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: $font-family--base;
+      &:hover {
+        color: $elo-light;
+      }
+    }
+  }
+}
+
+
+/* Mobile
+   ========================================================================== */
+.main-nav--mobile {
+    background: #313131;
+
+    @media(min-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+
+
+/* Desktop
+   ========================================================================== */
+// .main-nav--desktop {
+
+// }
