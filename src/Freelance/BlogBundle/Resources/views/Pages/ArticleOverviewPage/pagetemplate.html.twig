@@ -4,24 +4,21 @@
         {% set articlenode = get_node_translation_for(article) %}
         <article class="col-md-4">
             <div class="inner-article">
-                <a href="{{ '/'~articlenode.url }}" class="link-image">
-                    {{ render_pageparts(article, 'image') }}
-                </a>
-                <div class="post-info eq-height">
-                    <time class="blog-item__head__meta">
-                        {{ article.date | localizeddate('medium', 'none') }}
-                    </time>
-                    <a href="{{ '/'~articlenode.url }}">
+                {{ render_pageparts(article, 'image') }}
+                <div class="post-info-caption">
+                    {#<div class="post-info">#}
+                        <time class="blog-item__head__meta">
+                            {{ article.date | localizeddate('medium', 'none') }}
+                        </time>
                         <h3 class="blog-item__head__title">
                             {{ article.title }}
                         </h3>
-                    </a>
-                    <p class="text--right blog-item__read-more">
-                        <a href="{{ '/'~articlenode.url }}" class="blog-item__read-more__link hvr-bounce-to-right">
-                            {{ 'Lire la suite'|trans }}
+                        <a href="{{ '/'~articlenode.url }}">
+                            {{ "Lire l'article"|trans }}
                         </a>
-                    </p>
+                    {#</div>#}
                 </div>
+
             </div>
         </article>
         {% set count = count + 1 %}
