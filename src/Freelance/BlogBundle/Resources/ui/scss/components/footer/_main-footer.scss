@@ -5,3 +5,13 @@
 /* General
    ========================================================================== */
 
+footer {
+  background-color: $elo-dark;
+  p {
+    color: $elo-light;
+  }
+  a {
+    color: $elo-primary-col;
+  }
+}
+

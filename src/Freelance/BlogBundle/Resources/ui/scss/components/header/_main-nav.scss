@@ -10,56 +10,130 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   display: block;
 }
 
-#mainNav {
-  background-color: $elo-light;
-}
-
-/* img brand ***/
-.navbar-brand {
-  position: absolute;
-  top: 0px;
-  left: 40%;
-  width: 10%;
-  height: auto;
-  display: inline;
-  background-color: $elo-light;
-  img {
-    width: 100%;
+//#mainNav {
+//  background-color: $elo-light;
+//}
+//
+//.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+//  background-color: $elo-light;
+//}
+//
+//
+///**** navigation Link   ***/
+//.navbar-nav {
+//  width: 40%;
+//  li {
+//    width: 25%;
+//    text-align: center;
+//    a {
+//      color: $elo-dark;
+//      text-decoration: none;
+//      text-transform: uppercase;
+//      font-family: $font-family--base;
+//      &:hover {
+//        color: $elo-dark;
+//      }
+//    }
+//  }
+//}
+.navbar-default {
+  background-color: white;
+  border-color: rgba($elo-font-dark, 0.05);
+  font-family: $font-family--base;
+  @include  transition-all();
+  .navbar-header .navbar-brand {
+    color: $elo-primary-col;
+    font-family: $font-family--base;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:hover,
+    &:focus {
+      color: darken($elo-primary-col, 10%);
+    }
   }
-}
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
-  background-color: $elo-light;
-}
-
-
-/**** navigation Link   ***/
-.navbar-nav {
-  width: 40%;
-  li {
-    width: 25%;
-    text-align: center;
-    a {
-      color: $elo-dark;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: $font-family--base;
+  .nav {
+    > li {
+      > a,
+      > a:focus {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        color: $elo-font-dark;
+        &:hover {
+          color: $elo-primary-col;
+        }
+      }
+      &.active {
+        > a,
+        > a:focus {
+          color: $elo-primary-col !important;
+          background-color: transparent;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    background-color: transparent;
+    border-color: rgba(white, 0.3);
+    .navbar-header .navbar-brand {
+      color: rgba($elo-font-dark, 0.7);
+      &:hover,
+      &:focus {
+        color: $elo-font-dark;
+      }
+    }
+    .nav > li > a,
+    .nav > li > a:focus {
+      color: rgba($elo-font-dark, 0.7);
       &:hover {
-        color: $elo-dark;
+        color: $elo-font-dark;
+      }
+    }
+    &.affix {
+      background-color: white;
+      border-color: fade($elo-font-dark, 5%);
+      .navbar-header .navbar-brand {
+        color: $elo-primary-col;
+        font-size: 14px;
+        &:hover,
+        &:focus {
+          color: darken($elo-primary-col, 10%);
+        }
+      }
+      .nav > li > a,
+      .nav > li > a:focus {
+        color: $elo-font-dark;
+        &:hover {
+          color: $elo-primary-col;
+        }
       }
     }
   }
 }
 
 
+//align center
+.navbar-right {
+  padding-right: 40px;
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
 /* Mobile
    ========================================================================== */
-.main-nav--mobile {
-    background: #313131;
-
-    @media(min-width: $screen-md-min) {
-        display: none;
-    }
-}
+//.main-nav--mobile {
+//    background: #313131;
+//
+//    @media(min-width: $screen-md-min) {
+//        display: none;
+//    }
+//}
 
 
 

@@ -3,37 +3,45 @@
    ========================================================================== */
 
 header {
-  img {
-    width: 100%;
-  }
-
+  position: relative;
+  width: 100%;
+  background: url('/frontend/img/general/straw-filter2.png') 50% 0 no-repeat fixed;
+  @include background-cover();
+  text-align: center;
+  color: white;
   .rotate-h1 {
     color: $elo_primary-col;
   }
-}
-
-header {
-  position: relative;
-  width: 100%;
-  height: auto;
-//  @include background-cover;
-  text-align: center;
-  color: white;
+  img {
+    padding-top: 2%;
+    padding-bottom: 4%;
+  }
   .header-content {
     position: relative;
     text-align: center;
-    padding: 100px 15px 100px;
+    padding: 10% 5% 10%;
     width: 100%;
     .header-content-inner {
       h1 {
-        color: $elo-font-dark;
         font-weight: 700;
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
+        color: $elo-font-dark;
+        text-align: left;
+      }
+      a i {
+       padding-top: 50px;
+        color: rgba($elo-font-dark, 0.9);
       }
       hr {
         margin: 30px auto;
+      }
+      p {
+        font-weight: 300;
+        color: $elo-font-dark;
+        font-size: 16px;
+        margin-bottom: 50px;
       }
     }
   }
@@ -41,7 +49,7 @@ header {
     min-height: 100%;
     .header-content {
       position: absolute;
-      top: 50%;
+      top: 40%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -50,7 +58,17 @@ header {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        p {
+          font-size: 18px;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
   }
 }
+
+/* ==========================================================================
+   Header - Main header MOBILE
+   ========================================================================== */

@@ -2,16 +2,16 @@
 {% if pagerfanta.nbResults > 0 %}
     {% for article in pagerfanta.currentPageResults %}
         {% set articlenode = get_node_translation_for(article) %}
-        <article class="col-md-6">
+        <article class="col-md-4">
             <div class="inner-article">
-                <a href="{{ articlenode.url }}" class="link-image">
+                <a href="{{ '/'~articlenode.url }}" class="link-image">
                     {{ render_pageparts(article, 'image') }}
                 </a>
                 <div class="post-info eq-height">
                     <time class="blog-item__head__meta">
                         {{ article.date | localizeddate('medium', 'none') }}
                     </time>
-                    <a href="{{ articlenode.url }}">
+                    <a href="{{ '/'~articlenode.url }}">
                         <h3 class="blog-item__head__title">
                             {{ article.title }}
                         </h3>

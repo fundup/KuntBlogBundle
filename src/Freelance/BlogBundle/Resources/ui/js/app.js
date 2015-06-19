@@ -22,6 +22,20 @@ FreelanceBlogBundle = (function($, window, undefined) {
 
 }(jQuery, window));
 
+
+//paralax effect on image
+function updateBackground($el, speed) {
+
+    var diff = $(window).scrollTop() - $el.offset().top;
+    var yPos = -(diff * speed);
+
+    var coords = '50% ' + yPos + 'px';
+
+    $el.css({
+        backgroundPosition: coords
+    });
+}
+
 $(function() {
     FreelanceBlogBundle.eqHeight();
 
@@ -31,6 +45,25 @@ $(function() {
         speed: 2000 // How many milliseconds until the next word show.
     });
 
-    //paralax
-    $('.header-content').parallax("center", 0.3);
+    // Closes the Responsive Menu on Menu Item Click
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
+    });
+
+
+    //Offset for Main Navigation
+    $('#mainNav').affix({
+        offset: {
+            top: 100
+        }
+    });
+
+    //START paralax on header
+    var $el = $('header');
+    $(window).scroll(function () {
+        updateBackground($el, 0.3);
+    });
+    updateBackground($el, 0.3);
+    //END paralax on header
+
 });
